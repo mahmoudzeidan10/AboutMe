@@ -6,6 +6,8 @@ console.log('user Name is: ' + userName);
 
 var score=0;
 
+//Q1
+function eatMansaf(){
 var mansaf = prompt('Do I like Mansaf ?, PLZ answer with yes or no');
 switch (mansaf.toLocaleLowerCase()) {
     case 'yes':
@@ -20,9 +22,12 @@ switch (mansaf.toLocaleLowerCase()) {
         console.log('the user answer is wrong')
         break;
 }
+}
+eatMansaf();
 
+//Q2
 
-
+function football(){
 var footballTeam = prompt('Is my favourite football team Barcelona?, PLZ answer with yes or no');
 switch (footballTeam.toLocaleLowerCase()) {
     case 'yes':
@@ -37,7 +42,12 @@ switch (footballTeam.toLocaleLowerCase()) {
         console.log('the user answer is wrong')
         break;
 }
+}
+football();
 
+//Q3
+
+function chess(){
 var playChess = prompt('Do I Play Chess?, PLZ answer with yes or no');
 switch (playChess.toLocaleLowerCase()) {
     case 'yes':
@@ -52,7 +62,11 @@ switch (playChess.toLocaleLowerCase()) {
         score++;
         break;
 }
+}
+chess();
 
+//Q4
+function games(){
 var videoGames = prompt('Do I like Playing Video Games ?, PLZ answer with yes or no');
 switch (videoGames.toLocaleLowerCase()) {
     case 'yes':
@@ -67,7 +81,12 @@ switch (videoGames.toLocaleLowerCase()) {
         console.log('the user answer is wrong')
         break;
 }
+}
+games();
 
+// Q5
+
+function liveP(){
 var livePlace = prompt('Do i live in Irbid?, PLZ answer with yes or no');
 switch (livePlace.toLocaleLowerCase()) {
     case 'yes':
@@ -82,12 +101,14 @@ switch (livePlace.toLocaleLowerCase()) {
         console.log('the user answer is wrong')
         break;
 }
+}
+liveP();
 
-
-
+//Q6
+function guessAge(){
 var attempts1 = 0;
 var counter1 = 0;
-while ( attempts1 < 6) {
+while ( attempts1 < 4) {
     attempts1++;
     var age = prompt(' Guess My Age?');
     if (age == 23) {
@@ -108,8 +129,10 @@ while ( attempts1 < 6) {
 
     }
 alert('My Age is: 23');
+}
+guessAge();
 
-
+//Q7
 
 var color = ['black','blue','red','green'];
 var userColor;
