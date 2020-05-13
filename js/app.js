@@ -45,7 +45,7 @@ switch (footballTeam.toLocaleLowerCase()) {
 }
 football();
 
-//Q3
+// //Q3
 
 function chess(){
 var playChess = prompt('Do I Play Chess?, PLZ answer with yes or no');
@@ -65,7 +65,8 @@ switch (playChess.toLocaleLowerCase()) {
 }
 chess();
 
-//Q4
+// //Q4
+
 function games(){
 var videoGames = prompt('Do I like Playing Video Games ?, PLZ answer with yes or no');
 switch (videoGames.toLocaleLowerCase()) {
@@ -106,57 +107,67 @@ liveP();
 
 //Q6
 function guessAge(){
-var attempts1 = 0;
-var counter1 = 0;
-while ( attempts1 < 4) {
-    attempts1++;
-    var age = prompt(' Guess My Age?');
+    var correct = false;
+
+for(var i=0; i<4 ; i++) {
+    var age = prompt('Guess My Age?');
     if (age == 23) {
         alert('You Are Right My age is 23!');
-        counter1++;
+        correct=true;
         score++;
         break;
     }  else if  (age < 23) {
             alert('Too Low!');
-            counter1++;
+        
         }
         else if (age > 23) {
             alert('Too High!');
-            counter1++;
+            
 
         } 
 
 
     }
-alert('My Age is: 23');
+    if(correct == false){
+        alert('You Lost your 4 Trials!');
+    }
+
 }
+
 guessAge();
 
-//Q7
+// Q7
 
-var color = ['black','blue','red','green'];
-var userColor;
-var attempts2=0;
-var counter2;
-while(attempts2<6) {
-    userColor = prompt('Guess My Favourite Color!');
-     userColor.toLocaleLowerCase;
-    if (userColor == 'black' ||userColor == color[1]||userColor == color[2] || userColor == color[3]){
+function mycolor(){
 
-        alert('Your Guess Is Write!');
-        counter2++;
-        score++;
-        console.log(counter2);
-        break;
-        
-    }else{
-        alert('Your Guess Is Wrong!');
-        attempts2++;
-        console.log(attempts2);
-    }
-}
-alert('My Favourite Colors Are: '+ color);
-
-alert('Your score is:'+score+' Out of 7');
-console.log('User Score: '+ score);
+    var color = ['black','blue','red','green'];
+    var correct = false;
+    var userColor;
+    var i=0;
+    // var counter2;
+    while(i<6) {
+        userColor = prompt('Guess My Favourite Color!');
+         userColor.toLocaleLowerCase;
+        for(var j=0 ;j<color.length ; j++){
     
+        if (userColor == color[j]){
+            alert('Your Guess Is Write!');
+            // counter2++;
+            score++;
+            correct = true;
+            // console.log(counter2);
+            break;
+            }
+        } 
+        if (correct ==true){
+            break;
+        }
+        i++ ;
+} 
+    
+    alert('My Favourite Colors Are: '+ color);
+    
+    alert('Your score is:'+score+' Out of 7');
+    console.log('User Score: '+ score);
+    }
+    mycolor();
