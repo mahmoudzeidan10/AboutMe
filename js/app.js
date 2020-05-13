@@ -133,7 +133,7 @@ alert('My Age is: 23');
 guessAge();
 
 //Q7
-
+function myColor(){
 var color = ['black','blue','red','green'];
 var userColor;
 var attempts2=0;
@@ -159,4 +159,5 @@ alert('My Favourite Colors Are: '+ color);
 
 alert('Your score is:'+score+' Out of 7');
 console.log('User Score: '+ score);
-    
+}
+myColor();   
