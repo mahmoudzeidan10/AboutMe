@@ -136,7 +136,8 @@ for(var i=0; i<4 ; i++) {
 
 guessAge();
 
-// Q7
+
+//Q7
 
 function mycolor(){
 
